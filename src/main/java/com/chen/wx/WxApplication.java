@@ -1,4 +1,4 @@
-package com.lyd.wx;
+package com.chen.wx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

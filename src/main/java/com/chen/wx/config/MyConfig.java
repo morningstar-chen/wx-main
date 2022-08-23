@@ -1,4 +1,4 @@
-package com.lyd.wx.config;
+package com.chen.wx.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

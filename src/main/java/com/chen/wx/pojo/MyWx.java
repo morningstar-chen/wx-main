@@ -1,4 +1,4 @@
-package com.lyd.wx.pojo;
+package com.chen.wx.pojo;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

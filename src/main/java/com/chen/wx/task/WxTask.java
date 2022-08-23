@@ -1,7 +1,7 @@
-package com.lyd.wx.task;
+package com.chen.wx.task;
 
-import com.lyd.wx.pojo.MyWx;
-import com.lyd.wx.pojo.Weather;
+import com.chen.wx.pojo.MyWx;
+import com.chen.wx.pojo.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

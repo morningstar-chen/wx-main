@@ -1,7 +1,7 @@
-package com.lyd.wx.task;
+package com.chen.wx.task;
 
-import com.lyd.wx.pojo.*;
-import com.lyd.wx.uitls.DateUtils;
+import com.chen.wx.pojo.*;
+import com.chen.wx.uitls.DateUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -42,7 +42,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>com.lyd.wx.WxApplication</mainClass>
+                    <mainClass>com.chen.wx.WxApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

@@ -1,10 +1,10 @@
-package com.lyd.wx.task;
+package com.chen.wx.task;
 
 import com.alibaba.fastjson.JSON;
-import com.lyd.wx.pojo.AccessToken;
-import com.lyd.wx.pojo.Content;
-import com.lyd.wx.pojo.MyWx;
-import com.lyd.wx.pojo.Weather;
+import com.chen.wx.pojo.AccessToken;
+import com.chen.wx.pojo.Content;
+import com.chen.wx.pojo.MyWx;
+import com.chen.wx.pojo.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;

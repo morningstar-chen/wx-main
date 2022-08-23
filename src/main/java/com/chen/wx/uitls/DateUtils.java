@@ -1,4 +1,4 @@
-package com.lyd.wx.uitls;
+package com.chen.wx.uitls;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,8 +1,8 @@
-package com.lyd.wx;
+package com.chen.wx;
 
 import com.alibaba.fastjson.JSON;
-import com.lyd.wx.pojo.*;
-import com.lyd.wx.uitls.DateUtils;
+import com.chen.wx.pojo.*;
+import com.chen.wx.uitls.DateUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
