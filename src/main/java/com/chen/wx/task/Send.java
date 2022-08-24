@@ -86,7 +86,7 @@ public class Send {
         //距离认识多少天
         //sd.setDay1(new Item(DateUtils.dayForLastDay(wx.getDay1()),"#fee140"));
         //距离在一起多少天
-        sd.setDay1(new Item(DateUtils.dayForLastDay(wx.getDay2()), "#fee140"));
+        sd.setDay1(new Item(DateUtils.dayForLastDay(wx.getDay1()), "#fee140"));
         //距离我生日多少天
         //sd.setDay3(new Item(DateUtils.dayToBirthday(wx.getDay3()),"#fee140"));
         //距离宝贝生日多少天

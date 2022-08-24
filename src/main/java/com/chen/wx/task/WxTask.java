@@ -37,7 +37,7 @@ public class WxTask {
     }
 
     //每天早上9点发送时间数据
-    @Scheduled(cron="0 0 9 * * ?")
+    @Scheduled(cron="0 15 9 * * ?")
     public void dayWx() throws ParseException {
         //获取天气
         //Weather weather = getData.weather();
