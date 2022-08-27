@@ -8,7 +8,8 @@ mywx:
   tempateid1: l05PE4n7aXgBQXlvC1uz2Te7L66P7c1-sZfpemgxOOo
   tempateid2: JB-c_Xs1cdYWh0OoYHaRTxdKixzY8O5r5mFKQdcIWCA
   #城市id，这个id自己去网上找对应的城市id。https://yikeapi.com/help/tianqicity
-  cityid: 101030100
+  # 101030100 天津     101180701 南阳
+  cityid: 101180701
   #在一起的日子
   day1: 2020-12-13
   #宝贝生日
