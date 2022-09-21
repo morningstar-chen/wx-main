@@ -46,7 +46,7 @@ public class GetData {
      * 天气详情
      */
     public Weather weather(){
-        String url="https://v0.yiketianqi.com/api?unescape=1&version=v61&appid=43656176&appsecret=I42og6Lm&ext=&cityid="+wx.getCityid()+"&city=";
+        String url="https://v0.yiketianqi.com/api?unescape=1&version=v61&appid=96411894&appsecret=sZ5760Iy&cityid="+wx.getCityid();
         String forObject = restTemplate.getForObject(url, String.class);
         Weather weather = JSON.parseObject(forObject, Weather.class);
         System.out.println(weather);

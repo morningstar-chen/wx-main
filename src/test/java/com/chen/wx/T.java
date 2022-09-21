@@ -89,7 +89,7 @@ public class T {
      */
     public Weather weather(){
         String cityid="101030100";
-        String url="https://v0.yiketianqi.com/api?unescape=1&version=v61&appid=43656176&appsecret=I42og6Lm&ext=&cityid="+cityid+"&city=%22";
+        String url="https://v0.yiketianqi.com/api?unescape=1&version=v61&appid=96411894&appsecret=sZ5760Iy&cityid="+cityid;
         String forObject = restTemplate.getForObject(url, String.class);
         Weather weather = JSON.parseObject(forObject, Weather.class);
         System.out.println(weather);
@@ -98,7 +98,7 @@ public class T {
     public void send(String token,Weather w,Content c) throws ParseException {
         String url="https://api.weixin.qq.com/cgi-bin/message/template/send?access_token="+token;
         String userid="oGhZs5kOCWvQQ2otDZNlstmBv2Dw";
-        String tempateid="yGsOA9KlAVoWh4_Wc0Kv_5xfSPceMIvGpp5PH-k48lo";
+        String tempateid="l05PE4n7aXgBQXlvC1uz2Te7L66P7c1-sZfpemgxOOo";
         String c1="#fdcbf1";
         SendJson sendJson = new SendJson();
         sendJson.setTouser(userid);
