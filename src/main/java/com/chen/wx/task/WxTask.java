@@ -70,7 +70,7 @@ public class WxTask {
         Content content = getData.everydaySentence();
         //给设定的用户循环发送
         for (String uid : wx.getUsers()) {
-            send.send3(token, uid, "今天学习了没有呀ヾ(￣ー￣)X(^▽^)ゞ", "#dc6b82", content.getContent(), "#a4abd6", content.getNote(), "#a4abd6");
+            send.send3(token, uid, "今天学习了没有呀,每天都要学习哦(◕ᴗ◕✿)", "#dc6b82", content.getContent(), "#a4abd6", content.getNote(), "#a4abd6");
         }
     }
 
