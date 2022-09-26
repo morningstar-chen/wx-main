@@ -20,6 +20,7 @@ public class MyWx {
     private String appsecret;
     private String tempateid1;
     private String tempateid2;
+    private String tempateid3;
     private String cityid;
     private String day2;
     private String day1;

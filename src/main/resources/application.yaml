@@ -7,6 +7,7 @@ mywx:
   #天气模板id
   tempateid1: l05PE4n7aXgBQXlvC1uz2Te7L66P7c1-sZfpemgxOOo
   tempateid2: JB-c_Xs1cdYWh0OoYHaRTxdKixzY8O5r5mFKQdcIWCA
+  tempateid3: WwDTosiQLQtVr6KZ5Lvpg1EXN8SHjIoykcUzqIONK-I
   #城市id，这个id自己去网上找对应的城市id。https://yikeapi.com/help/tianqicity
   # 101030100 天津     101180701 南阳
   cityid: 101180701

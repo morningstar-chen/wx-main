@@ -97,7 +97,7 @@ public class T {
     }
     public void send(String token,Weather w,Content c) throws ParseException {
         String url="https://api.weixin.qq.com/cgi-bin/message/template/send?access_token="+token;
-        String userid="oGhZs5kOCWvQQ2otDZNlstmBv2Dw";
+        String userid="oGhZs5haF-KjlDDBLA6PeoTYpp10";
         String tempateid="l05PE4n7aXgBQXlvC1uz2Te7L66P7c1-sZfpemgxOOo";
         String c1="#fdcbf1";
         SendJson sendJson = new SendJson();

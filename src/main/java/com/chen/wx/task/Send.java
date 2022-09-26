@@ -107,19 +107,19 @@ public class Send {
      * 事件提醒
      * 可以设置三句话，不同颜色，t文本，c颜色
      */
-//    public void send3(String token,String userid,String t1,String c1,String t2,String c2,String t3,String c3){
-//        String url="https://api.weixin.qq.com/cgi-bin/message/template/send?access_token="+token;
-//        String c="#fdcbf1";
-//        SendJson sendJson = new SendJson();
-//        sendJson.setTouser(userid);
-//        sendJson.setTemplate_id(wx.getTempateid3());
-//        sendJson.setTopcolor(c);
-//        SendData sd = new SendData();
-//        sd.setTxt1(new Item(t1,c1));
-//        sd.setTxt2(new Item(t2,c2));
-//        sd.setTxt3(new Item(t3,c3));
-//        sendJson.setData(sd);
-//        String s = restTemplate.postForObject(url, sendJson, String.class);
-//        System.out.println(s);
-//    }
+    public void send3(String token,String userid,String t1,String c1,String t2,String c2,String t3,String c3){
+        String url="https://api.weixin.qq.com/cgi-bin/message/template/send?access_token="+token;
+        String c="#fdcbf1";
+        SendJson sendJson = new SendJson();
+        sendJson.setTouser(userid);
+        sendJson.setTemplate_id(wx.getTempateid3());
+        sendJson.setTopcolor(c);
+        SendData sd = new SendData();
+        sd.setTxt1(new Item(t1,c1));
+        sd.setTxt2(new Item(t2,c2));
+        sd.setTxt3(new Item(t3,c3));
+        sendJson.setData(sd);
+        String s = restTemplate.postForObject(url, sendJson, String.class);
+        System.out.println(s);
+    }
 }

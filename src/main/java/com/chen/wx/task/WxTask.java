@@ -1,5 +1,6 @@
 package com.chen.wx.task;
 
+import com.chen.wx.pojo.Content;
 import com.chen.wx.pojo.MyWx;
 import com.chen.wx.pojo.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,26 +26,26 @@ public class WxTask {
     Send send;
 
     //每天早上8点发送天气数据
-    @Scheduled(cron="0 0 8 * * ?")
+    @Scheduled(cron = "0 0 8 * * ?")
     public void weatherWx() {
         //获取天气
         Weather weather = getData.weather();
         String token = getData.getToken();
         //给设定的用户循环发送
-        for(String uid:wx.getUsers()){
-            send.send1(token,weather,uid);
+        for (String uid : wx.getUsers()) {
+            send.send1(token, weather, uid);
         }
     }
 
     //每天早上9点发送时间数据
-    @Scheduled(cron="0 0 9 * * ?")
+    @Scheduled(cron = "0 0 9 * * ?")
     public void dayWx() throws ParseException {
         //获取天气
         //Weather weather = getData.weather();
         String token = getData.getToken();
         //给设定的用户循环发送
-        for(String uid:wx.getUsers()){
-            send.send2(token,uid);
+        for (String uid : wx.getUsers()) {
+            send.send2(token, uid);
         }
     }
 
@@ -62,24 +63,16 @@ public class WxTask {
 //        }
 //    }
 
-    //每天15点半和18点半提醒学习
-//    @Scheduled(cron="0 30 15,18 * * ?")
-//    public void studyWx(){
-//        //获取天气
-//        Weather weather = getData.weather();
-//        String token = getData.getToken();
-//        //给设定的用户循环发送
-//        for(String uid:wx.getUsers()){
-//            send.send3(token, uid,
-//                    "今天学习了没有呀ヾ(￣ー￣)X(^▽^)ゞ", "#ff758c",
-//                    null,null,null,null);
-//        }
-//    }
-
-
-
-
-
+    //每天10点半和15点半提醒学习
+    @Scheduled(cron = "0 30 10,15 * * ?")
+    public void studyWx() {
+        String token = getData.getToken();
+        Content content = getData.everydaySentence();
+        //给设定的用户循环发送
+        for (String uid : wx.getUsers()) {
+            send.send3(token, uid, "今天学习了没有呀ヾ(￣ー￣)X(^▽^)ゞ", "#dc6b82", content.getContent(), "#a4abd6", content.getNote(), "#a4abd6");
+        }
+    }
 
 
 }
